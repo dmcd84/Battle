@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'player'
 class Battle < Sinatra::Base
   # get '/' do
   #   'Testing infrastructure working!'
@@ -24,7 +25,7 @@ class Battle < Sinatra::Base
     erb :play
   end
 
-  gets '/attack' do
+  get '/attack' do
     @player_1_name = session[:player_1_name]
     @player_2_name = session[:player_2_name]
     erb :attack
