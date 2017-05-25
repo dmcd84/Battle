@@ -14,4 +14,5 @@ class Player
   def take_damage
     @hp -= 10
   end
+
 end
