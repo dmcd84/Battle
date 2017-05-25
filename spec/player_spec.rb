@@ -15,9 +15,9 @@ describe Player do
     end
   end
 
-  describe "#attack" do
-    it 'should attack the other player' do
-      expect { player.attack(player2) }.to change { player2.hp }. by -(10)
-    end
-  end
+  # describe "#attack" do
+  #   it 'should attack the other player' do
+  #     expect { player.attack(player2) }.to change { player2.hp }. by -(10)
+  #   end
+  # end
 end
